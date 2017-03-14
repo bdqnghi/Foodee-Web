@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Review App | Only Food Matters</title>
+    <meta name="description" content="Munchee is a fun and informative community where foodies around the world can easily connect, create memories, and share their dining experiences with our food review app.">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,300italic,300' rel='stylesheet' type='text/css'>
+    <link href="css/plugins.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/photoswipe.css">
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+      In the folder of skin CSS file there are also:
+      - .png and .svg icons sprite,
+      - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="css/default-skin/default-skin.css">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-80985523-1', 'auto');
+        ga('send', 'pageview', location.pathname , {
+            hitCallback: function() {
+              console.log("Sent analytics data with path : " + location.pathname);
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <!--nav-->
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+               <!--  <a class="navbar-brand" href="#"><img src="img/logo-nav.png" data-at2x="img/logo-nav@2x.png" alt="site name"></a> -->
+                 <a class="navbar-brand" href="#"><img src="img/munchee_logo.png" data-at2x="img/munchee_logo.png" alt="site name"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!--<li><a href="#sub" class="btn-default">Notify Me</a></li>-->
+                    <!--<li><a href="#download" class="btn-default">Download</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--nav end-->
+
+    <!--sub form-->
+
+    <section class="sub-form section-spacing text-center" id="sub">
+        <div class="container">
+            <header class="text-center">
+                <h2>Coming Soon to the App Store!</h2>
+                <h3>Download Munchee to get free gift cards of your favorite restaurants!</h3>
+            </header>
+           <!--  <div class="row">
+                <div class="col-md-10 center-block">
+
+                   
+                    <form class="form-inline" role="form" id="mc-form" action="/subscribe">
+                        <input type="email" class="form-control" placeholder="Email Address" required name="email" id="mailchimp-email">
+                        <button type="submit" class="btn btn-default button">Notify Me</button>
+                    </form>
+                   
+
+                    <div class="success-mc">
+                        <p></p>
+                    </div>
+                    <div class="error-mc">
+                        <p></p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!--sub form end-->
+
+    <!--main-->
+
+    <section class="main" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;" id="home">
+        <!-- <video class="bgvid" preload="auto" poster="/img/Hero.png" autoplay muted loop id="bgvid">
+            <source src="/videos/human.webm" type="video/webm">
+            <source src="/videos/human.mp4" type="video/mp4">
+        </video> -->
+        <div class="overlay" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <!--logo-->
+                    <div class="logo"><img src="img/munchee_logo.png" data-at2x="img/munchee_logo.png" alt="logo"></div>
+                    <!--logo end-->
+
+                </div>
+                <div class="col-md-6">
+
+                    <!--social-->
+                    <div class="social text-center">
+                        <ul>
+                            <li><a href="https://www.facebook.com/muncheeapp/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/muncheeapp" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/muncheeapp/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <!--social end-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-1">
+
+                    <!--welcome-message-->
+                    <header class="welcome-message">
+                        <h1>
+                            Only Food Matters!
+                        </h1>
+                    </header>
+                    <div class="action-btn"><a href="#features" class="btn btn-default">Learn More</a>
+                    <!--<a href="#sub" class="btn btn-default">Notify Me</a>-->
+                    </div>
+                    <!--welcome-message end-->
+
+                </div>
+                <div class="col-md-5"> <img src="img/hero.png" alt="" class="wow fadeInRight hero-img" data-no-retina> </div>
+            </div>
+        </div>
+    </section>
+
+    <!--main end-->
+
+    <!--about-->
+
+    <section class="reviews section-spacing text-center" id="about">
+        <div class="container">
+            <header class="text-center">
+                <h1>About Us</h1>
+            </header>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="review-slider">
+
+                        <!--review 1-->
+                        <div class="item">
+                            <blockquote class="col-md-10 center-block">
+                                <p> <i class="fa fa-quote-left"></i> Munchee is a visual guide and social-networking app for food. Munchee focuses only on the quality of the food, not the rating of the restaurant.
+                                    <br />
+                                    <i class="fa fa-quote-right"></i></p>
+                                </blockquote>
+                        </div>
+                        <!--review 1 end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video section-spacing text-center" id="video">
+        <div class="container">
+            <header class="text-center">
+            <h2>Watch Munchee in Action</h2>
+            </header>
+            <div class="row">
+            <div class="col-md-10 center-block">
+                <div class="embed-responsive embed-responsive-16by9"> 
+                
+                <!--For vimeo-->
+                <!--<iframe class="embed-responsive-item" src="http://player.vimeo.com/video/108792861?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff"></iframe>-->
+                <!--vimeo end--> 
+                
+                <!--For youtube--> 
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qTfvgRss1T0"></iframe>  <!--youtube end--> 
+                
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--reviews end-->
+
+    <!--Features-->
+
+    <section class="features section-spacing" id="features">
+        <div class="container">
+            <header class="text-center">
+                <h1>Sneak Peek</h1>
+            </header>
+
+            <!--feature 1-->
+            <div class="row">
+                <div class="col-md-6 text-center"> <img src="img/feature-1.png" alt="feature" class="wow fadeInLeft feature-img" data-no-retina data-wow-offset="250"> </div>
+                <div class="col-md-6">
+                    <article>
+                        <h2>Sharing is caring</h2>
+                        <p>Take a picture/video of a dish 
+                            <br /><br /> Rate and review it. 
+                            <br /><br /> Share it i.e. spread the love with others </p>
+                          
+                    </article>
+                </div>
+            </div>
+            <!--feature 1 end-->
+
+            <!--feature 2-->
+            <div class="row">
+                <div class="col-md-6 col-md-push-6 text-center"> <img src="img/feature-3.png" alt="feature" class="wow fadeInRight feature-img" data-no-retina data-wow-offset="250"> </div>
+                <div class="col-md-6 col-md-pull-6">
+                    <article>
+                        <h2>Fastest way to satisfy your cravings</h2>
+                        <p>Learn what’s good and hot around you with real-time food feed
+                            <br /><br /> Search for specific dishes that you crave
+                            <br /><br /> Pin what you want to try in your own food collection
+
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <!--feature 2 end-->
+
+            <!--feature 3-->
+            <div class="row">
+                <div class="col-md-6 text-center"> <img src="img/feature-2.png" alt="feature" class="wow fadeInLeft feature-img" data-no-retina data-wow-offset="250"> </div>
+                <div class="col-md-6">
+                    <article>
+                        <h2>Be full and have fun</h2>
+                        <p>Become a food-influencer and earn prizes
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <!--feature 3 end-->
+
+        </div>
+    </section>
+
+    <!--video-->
+
+    <section class="video section-spacing text-center" id="video">
+        <div class="container">
+            <header class="text-center">
+            <h2>The Ultimate Food Review App</h2>
+            </header>
+            <div class="row">
+            <div class="col-md-10 center-block">
+                <div class="embed-responsive embed-responsive-16by9"> 
+                
+               
+     
+
+               <iframe width="854" height="480" src="https://www.youtube.com/embed/eb263_Cduoc" frameborder="0" allowfullscreen></iframe> 
+                
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--video end--> 
+
+    <!--Features end-->
+
+    <!--app screenshot -->
+
+    <section class="screenshot section-spacing text-center" id="gallery">
+        <div class="container">
+            <header class="text-center">
+                <h1>Gallery</h1>
+                <h3>Our Food Collection</h3>
+            </header>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="my-gallery">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--app screenshot end -->
+
+    <!--download-->
+    <!--<section class="download section-spacing text-center" id="download">
+  <div class="container">
+    <header class="text-center">
+      <h2>Download App</h2>
+    </header>
+    <div class="row">
+      <div class="col-md-12"> <a href="#" class="apple"><i class="fa fa-apple"></i></a> <a href="#" class="android"><i class="fa fa-android"></i> </a> <a href="#" class="windows"><i class="fa fa-windows"></i> </a> </div>
+    </div>
+  </div>
+</section>-->
+
+    <!--download end-->
+
+   
+
+    <!--CONTACT-->
+
+    <section class="contact section-spacing" id="contact">
+        <div class="container">
+            <header class="text-center">
+                <h1>Contact Us</h1>
+                <h3>Have any questions? Send us a message</h3>
+            </header>
+            <div class="row">
+                <div class="col-md-6 center-block">
+
+                    <!--contact form-->
+
+                    <div class="contact-form">
+                        <form role="form" action="/sendmessage" method="post" id="contact-form">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
+                            <textarea class="form-control" name="message" id="message" rows="4" placeholder="Enter Your Message" required></textarea>
+                            <button type="submit" class="btn btn-default submit-btn" id="submit-btn" value="Send">Submit</button>
+                        </form>
+                        <div class="success-cf">
+                            <p><i class="fa fa-envelope"></i> Thank you! Your message has been sent.</p>
+                        </div>
+                        <div class="error-cf">
+                            <p><i class="fa fa-exclamation-triangle"></i> Something went wrong, try refreshing and submitting the form again.</p>
+                        </div>
+                    </div>
+
+                    <!--contact form end-->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACT END-->
+
+    <!--site-footer-->
+    <footer class="site-footer section-spacing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="scroll-top"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+
+                    <!--social-->
+
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/muncheeapp/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/muncheeapp" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/muncheeapp/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+
+                    <!--social end-->
+
+                    <small>&copy; Copyright Munchee Inc. 2016. All Rights Reserved.</small>
+                    <p><a href="privacy.html">Privacy</a> | <a href="terms.html">Terms of Use</a></p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--site-footer end-->
+
+    <!--PRELOAD-->
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+    <!--end PRELOAD-->
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="pswp__loading-indicator"><div class="pswp__loading-indicator__line"></div></div> -->
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip">
+                        <!-- <a href="#" class="pswp__share--facebook"></a>
+                    <a href="#" class="pswp__share--twitter"></a>
+                    <a href="#" class="pswp__share--pinterest"></a>
+                    <a href="#" download class="pswp__share--download"></a> -->
+                    </div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Core JS file -->
+    <script src="js/photoswipe.min.js"></script>
+
+    <!-- UI JS file -->
+    <script src="js/photoswipe-ui-default.min.js"></script>
+
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>
