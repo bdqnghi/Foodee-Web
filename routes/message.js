@@ -5,7 +5,7 @@ exports.post = function (request, response) {
 		return response.status(500).json({ success: false, data: 'No arguments provided!'});
 	}
 
-	var smtpTransport = nodemailer.createTransport('smtps://contact%40munchee.io:Honngocviendong1991@smtp.gmail.com');
+	var smtpTransport = nodemailer.createTransport('smtps://contact%40munchee.io:Honngocvientay@1995@smtp.gmail.com');
 	var name = request.body.name;
 	var email = request.body.email;
 	var message = request.body.message;
