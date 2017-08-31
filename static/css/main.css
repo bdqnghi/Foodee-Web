@@ -999,3 +999,13 @@ a.my-gallery__img--main {
 #sub header {
   margin-bottom: 1em !important;
 }
+
+.promotion-logo{
+  display: inline-block;
+}
+
+.promotion-img{
+  padding:5px 15px;
+  max-width: 15%;
+  max-height: 15%;
+}
